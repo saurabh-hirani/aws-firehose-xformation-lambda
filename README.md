@@ -50,9 +50,9 @@ and gets the actual date for which the record is destined. This approach selects
 going with the timestamp at which Firehose gets the record is incorrect because the Firehose may buffer, retry and process a
 record on ```2020-01-02 00:00:01``` with actual log timestamp ```2020-01-01 23:59:59```.
 
-The reason the field name is plural - ```index_dates``` as opposed to ```index_date``` is because the Firehose payload batch may
-contain records for both current and next at the rolling point i.e. one record may have log timestamp ```2020-01-01 23:59:59```
-and another might have ```2020-01-02 00:00:00```.
+The reason the field name is plural - ```index_dates``` as opposed to ```index_date``` is because the Firehose payload batch (AWS Kinesis
+firehose buffers data and processes in batch) may contain records for both current and next at the rolling date point i.e. one record may
+have log timestamp ```2020-01-01 23:59:59``` and another might have ```2020-01-02 00:00:00```.
 
 ```sh
 {
