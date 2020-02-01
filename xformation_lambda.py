@@ -14,7 +14,7 @@ logger = logger_utils.setup_logging(name="xformation_lambda_logger", log_level=o
 def load_input_params(event):
     """ Load input params """
     xformation_func_strings = os.environ.get("XFORMATION_FUNCS", event.get("XFORMATION_FUNCS", ""))
-    timestamp_key = os.environ.get("TIMESTAMP_KEY", event.get("TIMESTAMP_KEY", "timestamp"))
+    timestamp_key = os.environ.get("TIMESTAMP_KEY", event.get("TIMESTAMP_KEY", "log_timestamp"))
     extract_index_date_func_string = os.environ.get(
         "EXTRACT_INDEX_DATE_FUNC", event.get("EXTRACT_INDEX_DATE_FUNC", "extract_index_date")
     )
