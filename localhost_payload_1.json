@@ -1,0 +1,18 @@
+{
+  "XFORMATION_FUNCS": "xformation_utils.convert_to_underscore,xformation_utils.convert_epoch_ms_to_iso8601",
+  "EXTRACT_INDEX_DATE_FUNC": "xformation_utils.extract_date_from_iso8601",
+  "TIMESTAMP_KEY": "timestamp",
+  "deliveryStreamArn": "arn:aws:firehose:us-east-1:123456678:deliverystream/test-firehose-delivery-stream",
+  "records": [
+    {
+      "recordId": "1",
+      "base64_decoded_data": {"timestamp": "1580557436515", "field1": "record_1_name_field"},
+      "data": "eyJ0aW1lc3RhbXAiOiAiMTU4MDU1NzQzNjUxNSIsICJmaWVsZDEiOiAicmVjb3JkXzFfbmFtZV9maWVsZCJ9"
+    },
+    {
+      "recordId": "2",
+      "base64_decoded_data": {"timestamp": "1580557471680", "field1": "record_2_name_field"},
+      "data": "eyJ0aW1lc3RhbXAiOiAiMTU4MDU1NzQ3MTY4MCIsICJmaWVsZDEiOiAicmVjb3JkXzJfbmFtZV9maWVsZCJ9"
+    }
+  ]
+}
