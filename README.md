@@ -1,10 +1,10 @@
 # aws-firehose-xformation-lambda
 
-AWS Kinesis Firehose transformation Lambda
+AWS Kinesis Firehose transformation Lambda required for https://github.com/saurabh-hirani/terraform-aws-firehose-elasticsearch
 
-## Why?
+## Pre-requisites
 
-Pending
+Understand the need for having an [AWS Kinesis transformation Lambda](https://aws.amazon.com/blogs/compute/amazon-kinesis-firehose-data-transformation-with-aws-lambda/)
 
 ## Local setup
 
