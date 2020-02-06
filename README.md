@@ -2,6 +2,13 @@
 
 AWS Kinesis Firehose transformation Lambda required for https://github.com/saurabh-hirani/terraform-aws-firehose-elasticsearch
 
+Table of contents:
+
+* [Pre-requisites](#pre-requisites)
+* [Local setup](#local-setup)
+* [Sample stats output](#sample-stats-output)
+* [Package for uploading to AWS](#package-for-uploading-to-aws)
+
 ## Pre-requisites
 
 Understand the need for having an [AWS Kinesis transformation Lambda](https://aws.amazon.com/blogs/compute/amazon-kinesis-firehose-data-transformation-with-aws-lambda/)
@@ -80,6 +87,10 @@ look like the following:
 
 ## Package for uploading to AWS
 
-```sh
-# ./package.sh xformation_lambda.py
-```
+- Run the following command
+
+  ```sh
+  # ./package.sh xformation_lambda.py
+  ```
+
+  This will create a file ```xformation_lambda.zip``` which can be used to upload to AWS Lambda
